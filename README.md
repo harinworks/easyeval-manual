@@ -92,12 +92,10 @@ function UserEval(easyEval)                     UserEval 객체 생성자 (easyE
 
 ```
 
-const scriptName = "EasyEval";
-
 var easyEval = new EasyEval(SAFEEVAL_DEFAULT_NAME);
 var userEval = new UserEval(easyEval);
 
-function response(room, msg, sender, isGroupChat, replier, imageDB, packageName) {
+function response(room, msg, sender, isGroupChat, replier) {
     easyEval.runCommand(replier, msg);
     userEval.runCommand(replier, sender, msg);
 }
