@@ -41,8 +41,6 @@ EasyEval에서 새롭게 변경된 사항을 함께 알아봅시다!
 
 이 사항에 대한 피드백은 거의 받지 못하였으나, 매우 중대한 문제였습니다. 기존 SafeEval에서는 안전하게 자바스크립트를 실행하기 위한 Rhino 엔진의 'Context' 설정이 무려 봇 구동 스레드에도 적용되는 문제가 있었습니다. 따라서 SafeEval을 실행한 후, 간헐적으로 봇 스크립트의 정상적인 동작이 불가능했던 경우가 있었죠. EasyEval에서는 자바스크립트를 실행할 경우, Rhino 엔진을 새로운 스레드 내부에서 구동하도록 변경되었습니다.
 
-다만 이러한 스레드 사용으로 인하여 EasyEval의 결과 값을 직접 반환받을 수 없으며, 결과 객체를 매개변수로 갖는 콜백 함수를 이용하여야 합니다.
-
 
 ### 1.3. 다양한 기능 및 설정이 추가되었습니다.
 
@@ -90,7 +88,7 @@ function UserEval(easyEval)                     UserEval 객체 생성자 (easyE
 ## 3. EasyEval 간단한 사용 방법
 
 > 이제 본격적으로 EasyEval을 사용해 봅시다!   
-> [ Sample Source for JusticeHui-Family Bot ]
+> [ Sample Source for ManDongI-Family Bot ]
 
 ```
 
@@ -106,7 +104,7 @@ function response(room, msg, sender, isGroupChat, replier, imageDB, packageName)
 
 ```
 
-위의 소스는 JusticeHui 님의 봇 및 그와 유사한 API를 사용하는 봇에 호환되는 샘플입니다.   
+위의 소스는 'ManDongI'님의 봇 및 그와 유사한 API를 사용하는 봇에 호환되는 샘플입니다.   
 자바스크립트와 봇에 대하여 잘 알지 못하신다면, EasyEval 소스 아래에 샘플 소스를 그대로 삽입하여 사용하실 수 있습니다.   
 'function response( ... )' 바로 위에 아래의 소스를 추가하여 봅시다.
 
