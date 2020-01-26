@@ -6,10 +6,23 @@
 > 주의: LGPL 라이선스를 사용합니다!   
 > 아직 베타 버전입니다! 소스에 심각한 문제가 있을 수 있으며, 추후 API 등이 변경될 수 있습니다.
 
-[DropBox 링크](https://www.dropbox.com/s/8fjs8abrkaot071/EasyEval-2.0b.js?dl=0)
+[DropBox 링크](https://www.dropbox.com/s/7gojtbkexdjn38g/EasyEval-2.1b.js?dl=0)
 
-버전 2.0b   
+버전 2.1b   
 개발 LsmLands
+
+
+### 업데이트 내역
+
+#### 2.1b
+
+* 스레드 풀을 통한 실행 속도 개선 및 멀티코어 지원
+* 'Context'의 자바(Java) 클래스 비활성화 시, 외부 클래스 접근 규칙을 사용할 수 없는 문제 해결
+
+
+#### 2.0b
+
+* EasyEval 공개
 
 
 ## 목차
@@ -27,6 +40,7 @@
 반갑습니다! 봇 관련 네이버 카페에서 SafeEval 소스를 올렸던 LsmLands 입니다.   
 이번에 공개하는 SafeEval의 차기 버전, 'EasyEval'에는 많은 분께서 원하셨던 기능 및 다양한 고급 설정이 포함되어 있습니다.   
 EasyEval에서 새롭게 변경된 사항을 함께 알아봅시다!
+
 
 ### 1.1. 'SafeEval.run' 메소드의 사용이 중단되었습니다.
 
